@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Compound boolean</title>
+</head>
+<body>
+
+<form th:action="@{/save}" method="post">
+
+
+    <p>
+        <label for="bfast">Do you want it fast?(Enter y for yes and n for no)</label>
+        <input type="text" name="bfast" placeholder="y/n">
+    </p>
+
+    <p>
+        <label for="bcheap">Do you want it cheap?(Enter y for yes and n for no)</label>
+        <input type="text" name="bcheap" placeholder="y/n">
+    </p>
+
+    <p>
+        <label for="bgood">Do you want it to be good?(Enter y for yes and n for no)</label>
+        <input type="text" name="bgood" placeholder="y/n">
+    </p>
+
+
+        <input type="submit" value="Submit"/>
+
+
+</form>
+
+</body>
+</html>
